@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.act.techtalk2022</groupId>
-    <artifactId>tech-talk-2022</artifactId>
+    <artifactId>techtalk2022</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>channel-adapter</name>
+    <name>tech-talk</name>
     <description>Channel adapter service</description>
 
     <parent>

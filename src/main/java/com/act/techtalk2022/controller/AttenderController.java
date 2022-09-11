@@ -26,7 +26,7 @@ public class AttenderController {
 
     @Description("Adds new an attender")
     @PostMapping(
-            value = "/tech-talk/attenders",
+            value = "/attenders",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<GeneralResponse<CreateAttenderResponse>> addAttender(
@@ -40,7 +40,7 @@ public class AttenderController {
 
     @Description("Adds new attender")
     @GetMapping(
-            value = "/tech-talk/attenders",
+            value = "/attenders",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<GeneralResponse<GetAllAttenderResponse>> getAllAttenders() {
@@ -54,7 +54,7 @@ public class AttenderController {
 
     @Description("Update an attender")
     @PutMapping(
-            value = "/tech-talk/attenders/{id}",
+            value = "/attenders/{id}",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<GeneralResponse<Object>> updateAttender(
@@ -70,7 +70,7 @@ public class AttenderController {
 
     @Description("Delete an attender")
     @DeleteMapping(
-            value = "/tech-talk/attenders/{id}",
+            value = "/attenders/{id}",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<GeneralResponse<Object>> deleteAttender(
