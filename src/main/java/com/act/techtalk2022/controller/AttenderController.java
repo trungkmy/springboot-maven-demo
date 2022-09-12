@@ -8,6 +8,7 @@ import com.act.techtalk2022.controller.response.GetAllAttenderResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Description;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -18,11 +19,19 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.Instant;
+
 @RestController
 @RequiredArgsConstructor
 @Slf4j
 public class AttenderController {
 
+
+    @Description("get API version")
+    @GetMapping(value = "/")
+    public ResponseEntity<?> version() {
+        return ResponseEntity.status(HttpStatus.OK).body(Instant.now());
+    }
 
     @Description("Adds new an attender")
     @PostMapping(

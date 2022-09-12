@@ -9,7 +9,7 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>tech-talk</name>
+    <name>tech-talk-copy</name>
     <description>Channel adapter service</description>
 
     <parent>
